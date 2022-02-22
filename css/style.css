@@ -114,6 +114,84 @@ iframe {
   box-shadow: 0 3px 10px #333;
 }
 
+/*place the wrapper divs outside the sections - outermost divs take effect, require clearfixes for the first row of columns */
+.first {
+  column-count:2;
+  float:left;
+  clear:both;
+  box-sizing: border-box;
+}
+
+.summerGrass {
+  column-count:1;
+  width:635px;
+  max-width: 635px;
+  box-sizing: border-box;
+}
+
+.summerGrass::after {
+  content: ".";
+  clear:both;
+visibility: hidden;
+height:0;
+width:0;
+}
+
+.shoeArchive {
+  column-count:1;
+  width:310px;
+  max-width: 310px;
+  box-sizing: border-box;
+}
+
+.shoeArchive::after {
+  content: ".";
+  clear:both;
+visibility:hidden;
+height:0;
+width:0;
+}
+
+
+.secondRow{
+  column-count: 3;
+  float:left;
+  clear:both;
+}
+
+.endWrapper { 
+  column-count:3;
+  float:left;
+  clear:both;
+  box-sizing: border-box;
+  padding-left: 460px;
+}
+
+.border_right1 {
+  width:310px;
+  column-count: 1;
+  float:left;
+  clear:both;
+}
+
+.border_right2 {
+  width:300px;
+  column-count: 1;
+  float:left;
+  clear:both;
+}
+
+.border_right3 {
+  width:300px;
+  column-count: 1;
+  float:left;
+  clear:both;
+}
+
+
+/*end of column fixes*/
+
+
 .milk_text {
   font: bold 42px 'Elsie Swash Caps', cursive;
   color: white;
